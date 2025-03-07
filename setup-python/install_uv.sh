@@ -8,7 +8,7 @@ RESET=$(tput sgr0)
 echo "${GREEN}✓ Installing UV (Ultra-fast Python package manager)...${RESET}"
 
 # Install UV
-if curl -LsSf https://astral.sh/uv/install.sh | sh; then
+if sudo snap install astral-uv | sh; then
   echo "${GREEN}✓ UV installed successfully!${RESET}"
 else
   echo "${RED}✗ Failed to install UV!${RESET}"
