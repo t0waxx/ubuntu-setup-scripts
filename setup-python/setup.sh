@@ -2,6 +2,7 @@
 
 # ANSI color codes
 GREEN=$(tput setaf 2)
+YELLOW=$(tput setaf 3)
 RED=$(tput setaf 1)
 RESET=$(tput sgr0)
 
@@ -18,5 +19,8 @@ bash "$SCRIPT_DIR/install_python.sh"
 bash "$SCRIPT_DIR/setup_aliases.sh"
 bash "$SCRIPT_DIR/install_uv.sh"
 bash "$SCRIPT_DIR/setup_path.sh"
+
+# Display instruction to manually apply changes
+echo "${YELLOW}⚠ To apply changes, please run: source ~/.bashrc${RESET}"
 
 echo "${GREEN}✓ Python environment setup completed successfully!${RESET}"
