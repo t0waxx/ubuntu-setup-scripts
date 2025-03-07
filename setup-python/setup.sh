@@ -17,5 +17,6 @@ cd "$SCRIPT_DIR" || { echo "${RED}✗ Failed to change directory!${RESET}"; exit
 bash "$SCRIPT_DIR/install_python.sh"
 bash "$SCRIPT_DIR/setup_aliases.sh"
 bash "$SCRIPT_DIR/install_uv.sh"
+bash "$SCRIPT_DIR/setup_path.sh"
 
 echo "${GREEN}✓ Python environment setup completed successfully!${RESET}"
