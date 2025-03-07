@@ -1,0 +1,15 @@
+network:
+  version: 2
+  renderer: networkd
+  wifis:
+    wlan0:
+      optional: true
+      dhcp4: true
+      dhcp6: true
+      access-points:
+        "eduroam":
+          auth:
+            key-management: eap
+            method: peap
+            identity: "hogehoge@stu.hus.ac.jp"
+            password: "hogehoge"
