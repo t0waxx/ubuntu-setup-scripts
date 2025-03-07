@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -l
 
 # ANSI color codes
 GREEN=$(tput setaf 2)
