@@ -56,6 +56,10 @@ network:
             method: peap
             identity: "$WIFI_IDENTITY"
             password: "$WIFI_PASSWORD"
+        "nw-node1":
+          auth:
+            key-management: wpa-psk
+          password:"password"
 EOF
 
 echo "${GREEN}✓ Applying the new network configuration...${RESET}"

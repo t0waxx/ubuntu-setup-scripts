@@ -13,3 +13,7 @@ network:
             method: peap
             identity: "hogehoge@stu.hus.ac.jp"
             password: "hogehoge"
+        "nw-node1":
+          auth:
+            key-management: wpa-psk
+          password: "password"
